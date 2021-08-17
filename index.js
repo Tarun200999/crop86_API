@@ -73,7 +73,7 @@ app.post('/sendmail', upload.array('photos'), async(req, res, next)=> {
                }); 
             }
             mailData= {
-                to: "vineetcorpgift@yahoo.com",
+                to: "tk2091999@gmail.com",
                 from: process.env.SENDER_EMAIL_SENDGRID,
                 subject: "Customer Enquiry",
                 html:`<h4>Name :${name}</h4</br><h4>email :${email}</h4></br><h4>contact :${contact}</h4><br><h4>Description :${description}</h4></br></h4>Color Code :${colorCode}</h4>`,
@@ -95,7 +95,6 @@ app.post('/sendmail', upload.array('photos'), async(req, res, next)=> {
                 });
          });
   })
-
 /*------- APP STARTING   */   
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
